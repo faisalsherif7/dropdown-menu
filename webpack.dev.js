@@ -6,5 +6,6 @@ const { merge } = require('webpack-merge');
    devtool: 'inline-source-map',
    devServer: {
      static: './dist',
+     watchFiles: ['src/**.html'],
    },
  });
