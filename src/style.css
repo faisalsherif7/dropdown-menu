@@ -1,0 +1,30 @@
+.dropdown-items {
+    border: 1px solid gray;
+    width: 150px;
+    border-top: 0px;
+}
+
+.dropdown-selector {
+    width: 150px;
+    border: 1px solid gray;
+    margin: 0;
+    cursor: default;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+
+p {
+    margin: 0;
+    padding: 5px;
+}
+
+.dropdown-item {
+    margin: 0;
+}
+
+.dropdown-item:hover {
+    background-color: blue;
+    color: white;
+    cursor: default;
+}
