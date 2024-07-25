@@ -1,5 +1,5 @@
 function Dropdown(dropdownMenu) {
-    const dropdownButton = dropdownMenu.querySelector('.dropdown-selector')
+    const dropdownButton = dropdownMenu.querySelector('.dropdown-button')
     const dropdownItems = dropdownMenu.querySelector('.dropdown-items')
 
     dropdownItems.style.display = 'none'
