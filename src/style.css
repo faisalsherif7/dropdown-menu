@@ -34,3 +34,10 @@ p {
     display: flex;
     gap: 10px;
 }
+
+.image-frame {
+    max-width: 1000px;
+    max-height: 600px;
+    display: flex;
+    overflow: scroll;
+}
