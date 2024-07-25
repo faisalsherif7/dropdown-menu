@@ -1,10 +1,13 @@
 import './style.css'
 import { Dropdown } from './dropdown'
 
-const dropdownMenus = document.querySelectorAll('.dropdown-menu')
-dropdownMenus.forEach((dropdownMenu) => {
-    Dropdown(dropdownMenu)
-})
+function intializeDropdowns() {
+    const dropdownMenus = document.querySelectorAll('.dropdown-menu')
+    dropdownMenus.forEach((dropdownMenu) => {
+        Dropdown(dropdownMenu)
+    })
+}
+
 
 function hideRestOfImageCarousel() {
     document.querySelectorAll('.image').forEach((imageElement) => {
@@ -51,6 +54,7 @@ function chooseNextImage() {
     })
 }
 
+intializeDropdowns()
 hideRestOfImageCarousel()
 choosePreviousImage()
 chooseNextImage()
