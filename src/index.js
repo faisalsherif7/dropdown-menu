@@ -1,12 +1,14 @@
-import './style.css';
+import './style.css'
 
-const dropdownSelector = document.querySelector('.dropdown-selector')
-const dropdownItems = document.querySelector('.dropdown-items')
+const dropdownMenu = document.querySelector('.dropdown-menu')
 
-dropdownItems.style.display = 'none'
-dropdownSelector.classList.add('invisible')
+function Dropdown(dropdownMenu) {
+    const dropdownButton = dropdownMenu.querySelector('.dropdown-selector')
+    const dropdownItems = dropdownMenu.querySelector('.dropdown-items')
 
-function Dropdown(dropdownButton, dropdownItems) {
+    dropdownItems.style.display = 'none'
+    dropdownButton.classList.add('invisible')
+
     dropdownButton.addEventListener('click', (event) => {
         if (dropdownButton.classList.contains('invisible')) {
             dropdownButton.classList.remove('invisible')
@@ -18,4 +20,4 @@ function Dropdown(dropdownButton, dropdownItems) {
     })
 }
 
-Dropdown(dropdownSelector, dropdownItems)
+Dropdown(dropdownMenu)
