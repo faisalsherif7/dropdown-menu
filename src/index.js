@@ -8,7 +8,6 @@ function intializeDropdowns() {
     })
 }
 
-
 function hideRestOfImageCarousel() {
     document.querySelectorAll('.image').forEach((imageElement) => {
         if (!imageElement.classList.contains('visible-image')) {
@@ -18,7 +17,7 @@ function hideRestOfImageCarousel() {
 }
 
 function choosePreviousImage() {
-    const previousImageButton = document.querySelector('.previous-image')
+    const previousImageButton = document.querySelector('.previous-image-button')
     previousImageButton.addEventListener('click', () => {
         const currentImageElement = document.querySelector('.visible-image')
         const previousElement = currentImageElement.previousElementSibling
@@ -37,7 +36,7 @@ function choosePreviousImage() {
 }
 
 function chooseNextImage() {
-    const nextImageButton = document.querySelector('.next-image')
+    const nextImageButton = document.querySelector('.next-image-button')
     nextImageButton.addEventListener('click', () => {
         const currentImageElement = document.querySelector('.visible-image')
         const nextElement = currentImageElement.nextElementSibling
