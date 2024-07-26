@@ -36,8 +36,44 @@ p {
 }
 
 .image-frame {
-    /* max-width: 1000px;
-    max-height: 600px; */
-    display: flex;
-    overflow: scroll;
+    position: relative;
+}
+
+img {
+    object-fit: contain;
+    width: 500px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.previous-image-button,
+.next-image-button {
+    opacity: 0.3;
+    background-color: black;
+    color: white;
+    z-index: 1;
+    top: 0.5vh;
+    grid-column: 1 / 2;
+    border: 0;
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    transition: 0.4s;
+    padding: 0;
+    margin: 0;
+}
+
+.previous-image-button:hover,
+.next-image-button:hover {
+    opacity: 0.7;
+}
+
+.previous-image-button {
+    top: 40%;
+}
+
+.next-image-button {
+    top: 40%;
+    left: 420px;
 }
