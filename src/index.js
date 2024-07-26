@@ -64,6 +64,7 @@ initializeEventListeners()
 hideRestOfImageCarousel()
 choosePreviousImage()
 chooseNextImage()
+setInterval(chooseNextImage, 5000)
 
 function updateNavigationDot() {
     const currentImageValue = document
