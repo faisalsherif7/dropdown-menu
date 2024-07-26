@@ -1,3 +1,9 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 40px;
+}
+
 .dropdown-items {
     border: 1px solid gray;
     width: 150px;
@@ -33,10 +39,12 @@ p {
 .dropdowns-project {
     display: flex;
     gap: 10px;
+    margin: 10px;
 }
 
 .image-frame {
     position: relative;
+    display: flex;
 }
 
 img {
@@ -76,4 +84,21 @@ img {
 .next-image-button {
     top: 40%;
     left: 420px;
+}
+
+.navigation-dots {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.dot {
+    border: 2px solid white;
+    padding: 5px;
+    display: inline;
+    border-radius: 12px;
+}
+
+.current-image-dot {
+    background-color: white;
 }

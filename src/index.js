@@ -32,6 +32,8 @@ function choosePreviousImage() {
         currentImageElement.style.display = 'none'
         previousImageElement.classList.add('visible-image')
         previousImageElement.style.display = 'block'
+
+        updateNavigationDot()
     })
 }
 
@@ -50,6 +52,8 @@ function chooseNextImage() {
         currentImageElement.style.display = 'none'
         nextImageElement.classList.add('visible-image')
         nextImageElement.style.display = 'block'
+
+        updateNavigationDot()
     })
 }
 
@@ -57,3 +61,11 @@ intializeDropdowns()
 hideRestOfImageCarousel()
 choosePreviousImage()
 chooseNextImage()
+
+function updateNavigationDot() {
+    const currentImageValue = document.querySelector('.visible-image').getAttribute('data-value')
+    document.querySelector('.current-image-dot').classList.remove('current-image-dot')
+    document.querySelector(`[class="dot"][data-value="${currentImageValue}`).classList.add('current-image-dot')
+    console.log('here')
+}
+
