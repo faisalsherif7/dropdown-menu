@@ -76,5 +76,4 @@ function updateNavigationDot() {
     document
         .querySelector(`[class="dot"][data-value="${currentImageValue}`)
         .classList.add('current-image-dot')
-    console.log('here')
 }
