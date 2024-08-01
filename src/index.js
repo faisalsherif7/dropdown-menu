@@ -1,5 +1,5 @@
 import './style.css'
-import { Dropdown } from './dropdown'
+import { intializeDropdowns } from './dropdown'
 
 intializeDropdowns()
 initializeEventListeners()
@@ -7,13 +7,6 @@ hideRestOfImageCarousel()
 choosePreviousImage()
 chooseNextImage()
 setInterval(chooseNextImage, 5000)
-
-function intializeDropdowns() {
-    const dropdownMenus = document.querySelectorAll('.dropdown-menu')
-    dropdownMenus.forEach((dropdownMenu) => {
-        Dropdown(dropdownMenu)
-    })
-}
 
 function initializeEventListeners() {
     const nextImageButton = document.querySelector('.next-image-button')
